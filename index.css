@@ -1,0 +1,55 @@
+@media (max-width: 750px) {
+  .container-fluid {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    height: 100%;
+  }
+
+  .main {
+    margin-top: 0px !important;
+    height: 100%
+  }
+
+  footer {
+    background-color: black;
+    color: white;
+  }
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 30px;
+}
+
+.main {
+  background-color: gray;
+  max-width: 700px;
+  margin: auto;
+  margin-top: 60px;
+  padding: 10px;
+}
+
+.channels {
+  background-color: orange;
+  height: 500px;
+  border-radius: 1%;
+}
+
+h1 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  font-size: 10px;
+}
