@@ -1,6 +1,6 @@
 var channels = ["ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp",
                 "storbeck", "habathcx", "RobotCaleb", "noobs2ninjas"];
-var twitchURL = "https://www.twitch.tv/"
+var twitchURL = "https://www.twitch.tv/";
 var channel = "";
 var link = "";
 var status = "offline";
@@ -32,12 +32,26 @@ for (var i = 0; i < channels.length; i++) {
 
       link = twitchURL + channels[i];
 
-      $('.channels').append('<div class="row chan-div"><div class="col-lg-10"><h3>' + channels[i] 
-                            + '</h3><p>Status: <a href="' + link + '" class="' + disabled 
-                            + '" target="_blank">' + status + '</a></p><p><em>' + desc 
-                            + '</em></p></div><div class="col-lg-2 text-right"><img src="' + logo + '" height="' 
+      $('.channels').append('<div class="row chan-div ' + status + '"><div class="col-lg-10"><h3>' + channels[i]
+                            + '</h3><p>Status: <a href="' + link + '" class="' + disabled
+                            + '" target="_blank">' + status + '</a></p><p class="desc"><em>' + desc
+                            + '</em></p></div><div class="col-lg-2 text-right"><img src="' + logo + '" height="'
                             + size + '" width="' + size + '"></div></div>');
     });
   })(i);
 };
 
+$('#all').on('click', function() {
+  $('.online').show();
+  $('.offline').show();
+});
+
+$('#filter-on').on('click', function() {
+  $('.online').show();
+  $('.offline').hide();
+});
+
+$('#filter-off').on('click', function() {
+  $('.offline').show();
+  $('.online').hide();
+});
