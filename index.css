@@ -35,9 +35,23 @@ body {
 }
 
 .channels {
+  background-color: gray;
+
+}
+
+.chan-div {
+  padding: 15px;
+  text-align: left;
+  border: solid black;
+  margin-bottom: 5px;
   background-color: orange;
-  height: 500px;
   border-radius: 1%;
+}
+
+.disabled {
+  pointer-events: none;
+  cursor: default;
+  color: black;
 }
 
 h1 {
