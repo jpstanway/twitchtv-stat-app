@@ -49,10 +49,9 @@ body {
 }
 
 .disabled {
-  pointer-events: none;
-  cursor: default;
   color: black;
 }
+
 
 h1 {
   padding-top: 30px;
