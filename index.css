@@ -47,10 +47,12 @@ body {
 h1 {
   padding-top: 30px;
   padding-bottom: 30px;
+  font-family: "Press Start 2P", cursive;
+  color: #4B367C;
 }
 
 .main {
-  background-color: gray;
+  background-color: #367c6e;
   max-width: 700px;
   margin: auto;
   margin-top: 60px;
@@ -62,7 +64,7 @@ h1 {
 ***************/
 
 .filter {
-  background-color: red;
+  background-color: #7c3644;
   width: 275px;
   height: 60px;
   margin: auto;
@@ -83,6 +85,7 @@ h1 {
 .filter-btns li button {
   height: 26px;
   width: 64px;
+  background-color: #decdd0;
 }
 
 /*******************
@@ -95,7 +98,7 @@ h1 {
 }
 
 .channels {
-  background-color: gray;
+  background-color: 	#367c6e;
 }
 
 .chan-div {
@@ -103,7 +106,11 @@ h1 {
   border: solid black 0.5px;
   border-radius: 1%;
   margin-bottom: 5px;
-  background-color: orange;
+  background-color:	#c3d59d;
+}
+
+.chan-div h3 {
+  font-family: "Kelly Slab", cursive;
 }
 
 .chan-div p {
