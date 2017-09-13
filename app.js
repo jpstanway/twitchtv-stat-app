@@ -32,10 +32,10 @@ for (var i = 0; i < channels.length; i++) {
 
       link = twitchURL + channels[i];
 
-      $('.channels').append('<div class="row chan-div ' + status + '"><div class="col-lg-10"><h3>' + channels[i]
+      $('.channels').append('<div class="row chan-div ' + status + '"><div class="col-sm-10 text-left content"><h3>' + channels[i]
                             + '</h3><p>Status: <a href="' + link + '" class="' + disabled
                             + '" target="_blank">' + status + '</a></p><p class="desc"><em>' + desc
-                            + '</em></p></div><div class="col-lg-2 text-right"><img src="' + logo + '" height="'
+                            + '</em></p></div><div class="col-sm-2 text-right logo"><img src="' + logo + '" height="'
                             + size + '" width="' + size + '"></div></div>');
     });
   })(i);

@@ -16,6 +16,20 @@
   }
 }
 
+@media (max-width: 576px) {
+  .content {
+    width: 75%;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .logo {
+    width: 25%;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
+
 /***************
 *** MAIN ***
 ***************/
@@ -43,8 +57,32 @@ h1 {
   padding: 10px;
 }
 
+/***************
+**** FILTER ****
+***************/
+
+.filter {
+  background-color: red;
+  width: 275px;
+  height: 60px;
+  margin: auto;
+  margin-bottom: 5px;
+  border-radius: 4%;
+}
+
+.filter-btns {
+  text-align: center;
+  padding: 18px;
+}
+
 .filter-btns li {
-  display: inline;
+  display: inline-block;
+  line-height: 1px;
+}
+
+.filter-btns li button {
+  height: 26px;
+  width: 64px;
 }
 
 /*******************
@@ -66,7 +104,10 @@ h1 {
   border-radius: 1%;
   margin-bottom: 5px;
   background-color: orange;
-  text-align: left;
+}
+
+.chan-div p {
+  padding-top: 5px;
 }
 
 .disabled {
@@ -75,6 +116,10 @@ h1 {
 
 .desc {
   font-size: 15px;
+}
+
+.offline .desc {
+  display: none;
 }
 
 
