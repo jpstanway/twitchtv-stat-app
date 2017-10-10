@@ -41,16 +41,19 @@ for (var i = 0; i < channels.length; i++) {
   })(i);
 };
 
+//filter: show all channels
 $('#all').on('click', function() {
   $('.online').show();
   $('.offline').show();
 });
 
+//filter: show only online channels
 $('#filter-on').on('click', function() {
   $('.online').show();
   $('.offline').hide();
 });
 
+//filter: show only offline channels
 $('#filter-off').on('click', function() {
   $('.offline').show();
   $('.online').hide();
