@@ -14,8 +14,6 @@ for (var i = 0; i < channels.length; i++) {
     $.getJSON("https://wind-bow.gomix.me/twitch-api/streams/"
               + channels[i] + "?callback=?", function(data) {
 
-      console.log(data);
-
       if (data.stream === null ) {
         status = "offline";
         disabled = "disabled";
@@ -58,3 +56,10 @@ $('#filter-off').on('click', function() {
   $('.offline').show();
   $('.online').hide();
 });
+
+// COPYRIGHT
+var footer = document.getElementById('footer');
+var date = new Date();
+var year = date.getFullYear();
+
+footer.innerHTML = '<p>&copy;' + year + ' Jordan Stanway. All rights reserved.</p>';
